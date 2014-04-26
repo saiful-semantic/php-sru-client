@@ -82,7 +82,7 @@
                     <a href="../../Scriptotek/Sru/Records.html"><abbr title="Scriptotek\Sru\Records">Records</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_records">records</a>(string $cql, int $count = 10)
+                    <a href="#method_records">records</a>(string $cql, int $count = 10, mixed $httpClient = null)
                     <p>Perform a searchRetrieve request and return an iterator over the records</p>
                 </td>
                 <td></td>
@@ -259,9 +259,9 @@
     </div>
 
                 <h3 id="method_records">
-        <div class="location">at line 150</div>
+        <div class="location">at line 151</div>
         <code>            public            <a href="../../Scriptotek/Sru/Records.html"><abbr title="Scriptotek\Sru\Records">Records</abbr></a>
-    <strong>records</strong>(string $cql, int $count = 10)</code>
+    <strong>records</strong>(string $cql, int $count = 10, mixed $httpClient = null)</code>
     </h3>
     <div class="details">
         <p>Perform a searchRetrieve request and return an iterator over the records</p>
@@ -282,6 +282,11 @@
                 <td>$count</td>
                 <td>Number of records to request per request</td>
             </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$httpClient</td>
+                <td>A http client</td>
+            </tr>
             </table>
 
             
@@ -301,7 +306,7 @@
     </div>
 
                 <h3 id="method_explain">
-        <div class="location">at line 160</div>
+        <div class="location">at line 161</div>
         <code>            public            <a href="../../Scriptotek/Sru/ExplainResponse.html"><abbr title="Scriptotek\Sru\ExplainResponse">ExplainResponse</abbr></a>
     <strong>explain</strong>()</code>
     </h3>
