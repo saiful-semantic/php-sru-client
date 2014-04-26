@@ -49,14 +49,14 @@ valid()</p>
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>(string $cql, <a href="../../Scriptotek/Sru/Client.html"><abbr title="Scriptotek\Sru\Client">Client</abbr></a> $client, mixed $httpClient = null, int $count = 10)
+                    <a href="#method___construct">__construct</a>(string $cql, <a href="../../Scriptotek/Sru/Client.html"><abbr title="Scriptotek\Sru\Client">Client</abbr></a> $client, int $count = 10, mixed $httpClient = null)
                     <p>Create a new records iterator</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    string|null
                 </td>
                 <td class="last">
                     <a href="#method_getError">getError</a>()
@@ -66,11 +66,11 @@ valid()</p>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    int|null
                 </td>
                 <td class="last">
-                    <a href="#method_rewind">rewind</a>()
-                    <p>Rewind the Iterator to the first element</p>
+                    <a href="#method_numberOfRecords">numberOfRecords</a>()
+                    <p>Return the number of records</p>
                 </td>
                 <td></td>
             </tr>
@@ -91,6 +91,16 @@ valid()</p>
                 <td class="last">
                     <a href="#method_key">key</a>()
                     <p>Return the key of the current element</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_rewind">rewind</a>()
+                    <p>Rewind the Iterator to the first element</p>
                 </td>
                 <td></td>
             </tr>
@@ -122,7 +132,7 @@ valid()</p>
                         <h3 id="method___construct">
         <div class="location">at line 42</div>
         <code>            public            
-    <strong>__construct</strong>(string $cql, <a href="../../Scriptotek/Sru/Client.html"><abbr title="Scriptotek\Sru\Client">Client</abbr></a> $client, mixed $httpClient = null, int $count = 10)</code>
+    <strong>__construct</strong>(string $cql, <a href="../../Scriptotek/Sru/Client.html"><abbr title="Scriptotek\Sru\Client">Client</abbr></a> $client, int $count = 10, mixed $httpClient = null)</code>
     </h3>
     <div class="details">
         <p>Create a new records iterator</p>
@@ -143,14 +153,14 @@ valid()</p>
                 <td>SRU client reference (optional)</td>
             </tr>
                     <tr>
-                <td>mixed</td>
-                <td>$httpClient</td>
-                <td>A http client</td>
-            </tr>
-                    <tr>
                 <td>int</td>
                 <td>$count</td>
                 <td>Number of records to request per request</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$httpClient</td>
+                <td>A http client</td>
             </tr>
             </table>
 
@@ -161,8 +171,8 @@ valid()</p>
     </div>
 
                 <h3 id="method_getError">
-        <div class="location">at line 53</div>
-        <code>            public            
+        <div class="location">at line 56</div>
+        <code>            public            string|null
     <strong>getError</strong>()</code>
     </h3>
     <div class="details">
@@ -171,29 +181,49 @@ valid()</p>
 </p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
-                <h3 id="method_rewind">
-        <div class="location">at line 84</div>
-        <code>            public            
-    <strong>rewind</strong>()</code>
+                <h3 id="method_numberOfRecords">
+        <div class="location">at line 66</div>
+        <code>            public            int|null
+    <strong>numberOfRecords</strong>()</code>
     </h3>
     <div class="details">
-        <p>Rewind the Iterator to the first element</p>
+        <p>Return the number of records</p>
         <p>
 </p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_current">
-        <div class="location">at line 94</div>
+        <div class="location">at line 96</div>
         <code>            public            mixed
     <strong>current</strong>()</code>
     </h3>
@@ -219,7 +249,7 @@ valid()</p>
     </div>
 
                 <h3 id="method_key">
-        <div class="location">at line 103</div>
+        <div class="location">at line 105</div>
         <code>            public            int
     <strong>key</strong>()</code>
     </h3>
@@ -244,8 +274,24 @@ valid()</p>
                     </div>
     </div>
 
+                <h3 id="method_rewind">
+        <div class="location">at line 112</div>
+        <code>            public            
+    <strong>rewind</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Rewind the Iterator to the first element</p>
+        <p>
+</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
                 <h3 id="method_next">
-        <div class="location">at line 110</div>
+        <div class="location">at line 123</div>
         <code>            public            
     <strong>next</strong>()</code>
     </h3>
@@ -261,7 +307,7 @@ valid()</p>
     </div>
 
                 <h3 id="method_valid">
-        <div class="location">at line 137</div>
+        <div class="location">at line 150</div>
         <code>            public            bool
     <strong>valid</strong>()</code>
     </h3>
