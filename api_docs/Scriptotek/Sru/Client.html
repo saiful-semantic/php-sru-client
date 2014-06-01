@@ -52,7 +52,7 @@
                     string
                 </td>
                 <td class="last">
-                    <a href="#method_urlTo">urlTo</a>(string $cql, int $start = 1, int $count = 10)
+                    <a href="#method_urlTo">urlTo</a>($cql, $start = 1, $count = 10, $extraParams = array())
                     <p>Construct the URL for a CQL query</p>
                 </td>
                 <td></td>
@@ -72,7 +72,7 @@
                     <a href="../../Scriptotek/Sru/SearchRetrieveResponse.html"><abbr title="Scriptotek\Sru\SearchRetrieveResponse">SearchRetrieveResponse</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_search">search</a>(string $cql, int $start = 1, int $count = 10)
+                    <a href="#method_search">search</a>($cql, $start = 1, $count = 10, $extraParams = array())
                     <p>Perform a searchRetrieve request</p>
                 </td>
                 <td></td>
@@ -82,7 +82,7 @@
                     <a href="../../Scriptotek/Sru/Records.html"><abbr title="Scriptotek\Sru\Records">Records</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_records">records</a>(string $cql, int $count = 10, mixed $httpClient = null)
+                    <a href="#method_records">records</a>($cql, $count = 10, $extraParams = array(), $httpClient = null)
                     <p>Perform a searchRetrieve request and return an iterator over the records</p>
                 </td>
                 <td></td>
@@ -142,7 +142,7 @@
                 <h3 id="method_urlTo">
         <div class="location">at line 80</div>
         <code>            public            string
-    <strong>urlTo</strong>(string $cql, int $start = 1, int $count = 10)</code>
+    <strong>urlTo</strong>($cql, $start = 1, $count = 10, $extraParams = array())</code>
     </h3>
     <div class="details">
         <p>Construct the URL for a CQL query</p>
@@ -153,19 +153,28 @@
 
                     <table>
                     <tr>
-                <td>string</td>
+                <td></td>
                 <td>$cql</td>
-                <td>The CQL query</td>
+                <td>
+</td>
             </tr>
                     <tr>
-                <td>int</td>
+                <td></td>
                 <td>$start</td>
-                <td>Start value in result set (optional)</td>
+                <td>
+</td>
             </tr>
                     <tr>
-                <td>int</td>
+                <td></td>
                 <td>$count</td>
-                <td>Number of records to request (optional)</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$extraParams</td>
+                <td>
+</td>
             </tr>
             </table>
 
@@ -186,7 +195,7 @@
     </div>
 
                 <h3 id="method_getHttpOptions">
-        <div class="location">at line 104</div>
+        <div class="location">at line 108</div>
         <code>            public            array
     <strong>getHttpOptions</strong>()</code>
     </h3>
@@ -212,9 +221,9 @@
     </div>
 
                 <h3 id="method_search">
-        <div class="location">at line 132</div>
+        <div class="location">at line 136</div>
         <code>            public            <a href="../../Scriptotek/Sru/SearchRetrieveResponse.html"><abbr title="Scriptotek\Sru\SearchRetrieveResponse">SearchRetrieveResponse</abbr></a>
-    <strong>search</strong>(string $cql, int $start = 1, int $count = 10)</code>
+    <strong>search</strong>($cql, $start = 1, $count = 10, $extraParams = array())</code>
     </h3>
     <div class="details">
         <p>Perform a searchRetrieve request</p>
@@ -225,20 +234,28 @@
 
                     <table>
                     <tr>
-                <td>string</td>
+                <td></td>
                 <td>$cql</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>int</td>
+                <td></td>
                 <td>$start</td>
-                <td>Start value in result set (optional)</td>
+                <td>
+</td>
             </tr>
                     <tr>
-                <td>int</td>
+                <td></td>
                 <td>$count</td>
-                <td>Number of records to request (optional)</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$extraParams</td>
+                <td>
+</td>
             </tr>
             </table>
 
@@ -259,9 +276,9 @@
     </div>
 
                 <h3 id="method_records">
-        <div class="location">at line 151</div>
+        <div class="location">at line 155</div>
         <code>            public            <a href="../../Scriptotek/Sru/Records.html"><abbr title="Scriptotek\Sru\Records">Records</abbr></a>
-    <strong>records</strong>(string $cql, int $count = 10, mixed $httpClient = null)</code>
+    <strong>records</strong>($cql, $count = 10, $extraParams = array(), $httpClient = null)</code>
     </h3>
     <div class="details">
         <p>Perform a searchRetrieve request and return an iterator over the records</p>
@@ -272,20 +289,28 @@
 
                     <table>
                     <tr>
-                <td>string</td>
+                <td></td>
                 <td>$cql</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>int</td>
+                <td></td>
                 <td>$count</td>
-                <td>Number of records to request per request</td>
+                <td>
+</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td></td>
+                <td>$extraParams</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
                 <td>$httpClient</td>
-                <td>A http client</td>
+                <td>
+</td>
             </tr>
             </table>
 
@@ -306,7 +331,7 @@
     </div>
 
                 <h3 id="method_explain">
-        <div class="location">at line 161</div>
+        <div class="location">at line 165</div>
         <code>            public            <a href="../../Scriptotek/Sru/ExplainResponse.html"><abbr title="Scriptotek\Sru\ExplainResponse">ExplainResponse</abbr></a>
     <strong>explain</strong>()</code>
     </h3>
